@@ -1,0 +1,55 @@
+.main {
+  padding: 0;
+  margin-top: -1rem;
+  width: 100%;
+}
+
+.headerMain {
+  position: fixed;
+  margin-top: 0;
+  z-index: 999;
+  border: none;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  width: 100%;
+}
+
+.contents {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-bottom: 0;
+}
+
+/* ==================== MEDIA QUERIES(MEDIUM DEVICES) ==================*/
+@media screen and (max-width: 1024px) {
+  .headerMain {
+    position: fixed;
+    margin-top: 0;
+    z-index: 999;
+    border: none;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+/* ==================== MEDIA QUERIES(SMALL DEVICES) ==================*/
+@media screen and (max-width: 600px) {
+  .headerMain {
+    position: fixed;
+    margin-top: 0;
+    z-index: 999;
+    border: none;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    width: 100%;
+  }
+}

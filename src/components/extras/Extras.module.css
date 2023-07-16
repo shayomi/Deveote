@@ -1,0 +1,33 @@
+.extrasContainer {
+  margin-top: -4rem;
+}
+
+.extrasCard {
+  border-top: 0.3px solid rgb(117, 117, 117);
+}
+
+.extrasCard h1 {
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+}
+
+/* ==================== MEDIA QUERIES(MEDIUM DEVICES) ==================*/
+
+@media screen and (max-width: 1024px) {
+  .extrasContainer {
+    width: 769px;
+    margin-top: -17rem;
+  }
+}
+/* ==================== MEDIA QUERIES(SMALL DEVICES) ==================*/
+@media screen and (max-width: 600px) {
+  .extrasContainer {
+    width: 375px;
+    margin-top: -20rem;
+  }
+
+  .extrasCard h1 {
+    font-size: 18px;
+  }
+}

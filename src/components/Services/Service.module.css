@@ -1,0 +1,72 @@
+.service {
+  width: 90%;
+  margin: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.serviceContainer {
+  text-align: center;
+
+  padding: 0rem 2rem 2rem 0.9rem;
+  border: none;
+  transition: all ease 400ms;
+}
+
+.serviceContainer:hover {
+  background-color: white;
+  border-bottom: #36d794 3px solid;
+  box-shadow: 0 0 100px #ccc;
+}
+
+.serviceDetails img {
+  width: 100px;
+  height: 100px;
+}
+
+.serviceDetails h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #302f2f;
+}
+
+.serviceDetails p {
+  color: #302f2f;
+  opacity: 70%;
+  font-size: 15px;
+  line-height: 1.3rem;
+  width: 250px;
+}
+/* ==================== MEDIA QUERIES(MEDIUM DEVICES) ==================*/
+
+@media screen and (max-width: 1024px) {
+  .service {
+    width: 769px;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .serviceDetails p {
+    margin: auto;
+    width: 250px;
+  }
+}
+/* ==================== MEDIA QUERIES(SMALL DEVICES) ==================*/
+
+@media screen and (max-width: 600px) {
+  .service {
+    width: 360px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .serviceDetails p {
+    margin: auto;
+    width: 250px;
+  }
+}

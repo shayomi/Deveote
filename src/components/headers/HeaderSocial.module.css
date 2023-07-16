@@ -1,0 +1,85 @@
+.headerSocial {
+  display: flex;
+  margin: auto;
+  width: 80rem;
+  padding: 0rem 0em 0.2rem 0.2rem;
+  justify-content: space-between;
+}
+
+.headerSocialLeft {
+  display: flex;
+  gap: 0.5rem;
+}
+
+a {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.headerSocialRight {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialContact {
+  display: flex;
+}
+
+hr {
+  width: 92%;
+  height: 1px;
+  margin: auto;
+  padding-top: 0rem;
+  margin-top: 1rem;
+}
+
+/* ==================== MEDIA QUERIES(MEDIUM DEVICES) ==================*/
+@media screen and (max-width: 1024px) {
+  .headerSocialContainer {
+    width: 769px;
+    display: flex;
+  }
+
+  .headerSocialLeft {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 2rem;
+  }
+  .headerSocialRight a {
+    font-size: 10px;
+  }
+  hr {
+    display: none;
+  }
+}
+
+/* ==================== MEDIA QUERIES(SMALL DEVICES) ==================*/
+@media screen and (max-width: 769px) {
+  .headerSocialContainer {
+    width: 375px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .headerSocialLeft {
+    display: none;
+  }
+
+  .headerSocialRight {
+    display: flex;
+    flex-direction: row;
+
+    gap: 1rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  .headerSocialRight a {
+    font-size: 10px;
+  }
+
+  hr {
+    display: none;
+  }
+}

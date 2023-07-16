@@ -1,0 +1,149 @@
+.bestServiceContainer {
+  width: 100%;
+  margin-top: 4rem;
+  background-color: rgb(243, 243, 243);
+  height: 800px;
+}
+
+.bestServiceText {
+  text-align: center;
+  line-height: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.bestServiceText p {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+  line-height: 1.5rem;
+  color: rgb(112, 112, 112);
+}
+
+.bestServiceCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-left: 1.5rem;
+}
+.bestServiceCard {
+  width: 400px;
+  background-color: white;
+  border-radius: 0.2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: all ease 500ms;
+}
+
+.bestServiceCard:hover {
+  background-color: #36d794;
+}
+
+.bestServiceCardImg img {
+  width: 350px;
+  height: 250px;
+  border-radius: 0.5rem;
+}
+
+.bestServiceCardTitle h1 {
+  font-size: 20px;
+  color: rgb(34, 34, 34);
+}
+
+.bestServiceCardTitle p {
+  font-size: 13px;
+  line-height: 1.3rem;
+  text-align: justify;
+  color: rgb(112, 112, 112);
+}
+
+/* ==================== MEDIA QUERIES(MEDIUM DEVICES) ==================*/
+@media screen and (max-width: 1024px) {
+  .bestServiceContainer {
+    width: 769px;
+    margin-top: 0.5rem;
+  }
+
+  .bestServiceText {
+    text-align: center;
+    line-height: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .bestServiceText h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .bestServiceText p {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+
+  .bestServiceCard {
+    width: 250px;
+
+    padding: 1rem;
+  }
+
+  .bestServiceCardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 0rem;
+  }
+  .bestServiceCardImg img {
+    width: 230px;
+    height: 200px;
+    border-radius: 0.5rem;
+    padding-right: 1rem;
+  }
+}
+
+/* ==================== MEDIA QUERIES(SMALL DEVICES) ==================*/
+@media screen and (max-width: 600px) {
+  .bestServiceContainer {
+    width: 375px;
+    margin-top: 0.5rem;
+  }
+
+  .bestServiceText {
+    text-align: start;
+    line-height: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .bestServiceText h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .bestServiceText p {
+    margin: auto;
+    width: 375px;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+
+  .bestServiceCard {
+    width: 375px;
+
+    padding: 1rem;
+  }
+
+  .bestServiceCardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 0rem;
+  }
+  .bestServiceCardImg img {
+    width: 350px;
+    height: 250px;
+    border-radius: 0.5rem;
+  }
+}

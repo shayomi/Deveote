@@ -1,0 +1,70 @@
+.callContainer {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+}
+
+.callDetails {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  display: list-item;
+  line-height: 2rem;
+  list-style: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.callDetails p {
+  color: rgb(112, 112, 112);
+}
+
+.callDetails h1 {
+  color: rgb(34, 34, 34);
+}
+
+.callDetails button {
+  background: #36d794;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 3rem;
+  color: white;
+  border: none;
+  transition: all 400ms ease;
+}
+
+button:hover {
+  background: #36d850;
+  cursor: pointer;
+}
+/* ==================== MEDIA QUERIES(MEDIUM DEVICES) ==================*/
+
+@media screen and (max-width: 1024px) {
+  .callContainer {
+    width: 769px;
+    margin-left: auto;
+  }
+}
+
+/* ==================== MEDIA QUERIES(SMALL DEVICES) ==================*/
+@media screen and (max-width: 600px) {
+  .callContainer {
+    width: 375px;
+    margin-left: 0px;
+  }
+
+  .callDetails {
+    width: 370px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    line-height: 1.3rem;
+  }
+
+  .callDetails h1 {
+    font-size: 18px;
+  }
+}

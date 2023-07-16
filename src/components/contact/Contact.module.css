@@ -1,0 +1,228 @@
+.contactDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+  margin: 6rem;
+}
+
+.contactRight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.contactRightText {
+  width: 400px;
+}
+
+.contactRightText h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+.contactRightText p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(112, 112, 112);
+  line-height: 1.4rem;
+}
+
+.contactRightIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.contactRightIconsDetails {
+  background-color: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: none;
+  line-height: 1.7rem;
+  transition: all 800ms ease;
+}
+
+.contactRightIconsDetails:hover {
+  cursor: pointer;
+  background-color: #36d850;
+}
+
+.contactRightIconsDetails:hover > h2 {
+  color: white;
+}
+
+.contactRightIconsDetails:hover > p {
+  color: white;
+}
+.contactRightIconsDetails:hover > .contactIcc {
+  color: white;
+}
+.contactRightIconsDetails h2 {
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+}
+
+.contactRightIconsDetails p {
+  font-size: 13px;
+  color: rgb(112, 112, 112);
+}
+
+.contactIcc {
+  color: #36d794;
+}
+
+.contactLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLeftDetails {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  background-color: white;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: none;
+}
+
+.contactLeftDetails h1 {
+  font-size: 25px;
+  color: rgb(34, 34, 34);
+}
+
+.contactLeftForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.contactInput input {
+  width: 300px;
+  height: 40px;
+  border-radius: 2rem;
+  border: none;
+  background: rgb(224, 224, 224);
+}
+
+.contactInput textarea {
+  width: 300px;
+  height: 70px;
+  border-radius: 2rem;
+  border: none;
+  background: rgb(224, 224, 224);
+  resize: none;
+}
+
+input::placeholder {
+  padding: 1rem;
+  opacity: 70%;
+}
+
+textarea::placeholder {
+  padding: 1rem;
+  opacity: 70%;
+}
+
+.contactLeftButton {
+  text-align: center;
+}
+.contactLeftButton button {
+  margin-top: 1rem;
+  width: 300px;
+  background: #36d794;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 3rem;
+  color: white;
+  border: none;
+  transition: all 400ms ease;
+}
+button:hover {
+  background: #36d850;
+  cursor: pointer;
+}
+
+/* ==================== MEDIA QUERIES(MEDIUM DEVICES) ==================*/
+@media screen and (max-width: 1024px) {
+  .contactContainer {
+    width: 769px;
+    margin: auto;
+  }
+  .contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0rem;
+  }
+
+  .contactLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .contactLeftDetails {
+    width: 400px;
+    margin: auto;
+  }
+}
+
+/* ==================== MEDIA QUERIES(SMALL DEVICES) ==================*/
+@media screen and (max-width: 600px) {
+  .contactContainer {
+    width: 375px;
+  }
+  .contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0rem;
+  }
+  .contactRightText {
+    width: 370px;
+  }
+  .contactRightText h1 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .contactRightIcons {
+    width: 370px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .contactLeftDetails {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+  }
+
+  .contactLeftForm form {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}

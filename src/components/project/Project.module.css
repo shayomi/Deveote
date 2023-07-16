@@ -1,0 +1,174 @@
+.projectContainer {
+  width: 80%;
+  margin: 2.5rem;
+}
+
+.projectText {
+  text-align: center;
+  margin-left: 9rem;
+  line-height: 13px;
+}
+
+.projectText h1 {
+  color: rgb(34, 34, 34);
+}
+
+.projectText {
+  color: rgb(112, 112, 112);
+}
+
+.projectCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.cardTitle {
+  position: relative;
+  top: 31rem;
+  border-radius: 0rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  box-shadow: 0 0 100px #ccc;
+  width: 340px;
+  margin-top: -3rem;
+  margin-left: 1.8rem;
+  z-index: 1;
+  transition: all ease 200ms;
+}
+
+.cardContainer {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 100px #ccc;
+}
+
+.projectCard img {
+  width: 350px;
+  height: 400px;
+}
+
+.cardTitle h1 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.cardTitle p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #302f2f;
+  opacity: 80%;
+  padding-left: 20px;
+}
+
+.projectCard {
+  transition: all ease 400s;
+}
+
+.projectCard:hover > .cardTitle {
+  top: 26rem;
+}
+
+.projectCard:hover > .cardTitle h1 {
+  color: #36d794;
+}
+
+/* ==================== MEDIA QUERIES(MEDIUM DEVICES) ==================*/
+@media screen and (max-width: 1024px) {
+  .projectContainer {
+    width: 769px;
+    margin: auto;
+  }
+
+  .projectText {
+    text-align: center;
+    margin-left: 1rem;
+    line-height: 13px;
+  }
+
+  .projectText h1 {
+    font-size: 18px;
+  }
+
+  .projectCardContainer {
+    width: 220px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .cardTitle {
+    position: relative;
+    top: 20rem;
+    border-radius: 0rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    box-shadow: 0 0 100px #ccc;
+    width: 200px;
+    margin-top: -3rem;
+    margin-left: 1.8rem;
+    z-index: 1;
+    transition: all ease 200ms;
+  }
+
+  .projectCard {
+    transition: all ease 400s;
+  }
+
+  .projectCard:hover > .cardTitle {
+    top: 16rem;
+  }
+  .cardTitle h1 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+  }
+
+  .cardTitle p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #302f2f;
+    opacity: 80%;
+    padding-left: 20px;
+  }
+
+  .projectCard img {
+    width: 200px;
+    height: 240px;
+  }
+}
+
+/* ==================== MEDIA QUERIES(SMALL DEVICES) ==================*/
+@media screen and (max-width: 600px) {
+  .projectContainer {
+    width: 375px;
+    margin: auto;
+  }
+
+  .projectText {
+    text-align: start;
+    margin-left: 1rem;
+    line-height: 13px;
+  }
+
+  .projectText h1 {
+    font-size: 18px;
+  }
+
+  .projectCardContainer {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardTitle {
+    width: 320px;
+  }
+
+  .projectCard img {
+    width: 320px;
+    height: 380px;
+  }
+}
